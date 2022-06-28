@@ -2,34 +2,47 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 html, body { min-height: 100%; }
-
+@font-face {
+    font-family: "PROMETHEUS";
+    src: url(fonts/PROMETHEUS.ttf);
+	* {
+font-family: 'PROMETHEUS';
+}
+}
 body{
     font-family: 'Roboto', sans-serif;
 	background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/cc62c7145602091.62a114b4bae6e.gif");
 	background-position: center;
-	background-repeat: no-repeat;
+
 	background-size: cover;
 	position: relative;
+	
+	
 }
+
 
 h1 {
   background-color: black;
   color: white;
+  
 }
 
 .grid-2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+	
 }
 
 
 h2,.white{
     color: #fff;
+	
 }
 
 a{
-    color: #7A7C80;
+    color: #FFFFFF;
     text-decoration: none;
+
 }
 
 /* section 1 */
@@ -37,25 +50,29 @@ a{
     padding-top: 25vh;
     padding-left: 20vw;
     text-align: center;
+	
 }
 
 .section-1 p{
     font-size: 1.1rem;
     padding-bottom: 10px;
     margin:0;
-	color: #FB7659;
+	color: #FFFFFF;
+	
 }
 
 .section-1 h2{
     font-size: 1.7rem;
     margin-bottom: 10px;
-	color: #FC3E66;
+	color: #FFFFFF;
+	font-weight: bold
+	
 }
 
 .section-1 a{
     font-size: 1.5rem;
     padding: 10px;
-	color: #FCA449;
+	color: #FFFFFF;
 }
 /* section 2 */
 .section-2{
@@ -66,14 +83,14 @@ a{
 .section-2 h2{
     font-size: 1.7rem;
     margin-bottom: 10px;
-	color: #12EE98;
+	color: #FFFFFF;
 }
 
 .section-2 p{
     font-size: 1.1rem;
     padding-bottom: 10px;
     margin:0;
-	color: #F508A4
+	color: #FFFFFF
 }
 
 }
@@ -103,4 +120,6 @@ a{
         padding-left: 1.5rem;
         padding-top: 2rem;
     }
+	
+	
 }
