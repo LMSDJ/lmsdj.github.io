@@ -1,18 +1,27 @@
 /* global */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+html, body { min-height: 100%; }
+
+body{
+    font-family: 'Roboto', sans-serif;
+	background-image: url("https://raw.githubusercontent.com/LMSDJ/lmsdj.github.io/master/386ad372732483.5bf1c7ae5d1c9-min.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
 .grid-2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #7A7C80;
-
-}
 
 h2,.white{
     color: #fff;
@@ -22,6 +31,7 @@ a{
     color: #7A7C80;
     text-decoration: none;
 }
+
 /* section 1 */
 .section-1{
     padding-top: 25vh;
@@ -33,16 +43,19 @@ a{
     font-size: 1.1rem;
     padding-bottom: 10px;
     margin:0;
+	color: #FB7659;
 }
 
 .section-1 h2{
     font-size: 1.7rem;
     margin-bottom: 10px;
+	color: #FC3E66;
 }
 
 .section-1 a{
     font-size: 1.5rem;
     padding: 10px;
+	color: #FCA449;
 }
 /* section 2 */
 .section-2{
@@ -53,27 +66,16 @@ a{
 .section-2 h2{
     font-size: 1.7rem;
     margin-bottom: 10px;
+	color: #12EE98;
 }
 
 .section-2 p{
     font-size: 1.1rem;
     padding-bottom: 10px;
     margin:0;
+	color: #F508A4
 }
 
-.section-2 a{
-    display: block;
-    padding: 5px;
-    font-size: 1.2rem;
-    padding-left: 0;
-    width: 100px;
-}
-/* animations / utilities */
-.section-2 a:hover{
-    font-size: 1.3rem;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.2s;
 }
 
 .section-1 a:hover{
