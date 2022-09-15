@@ -12,12 +12,15 @@ font-family: 'PROMETHEUS';
 
 
 body{
-background-color: #000000;
-opacity: 1;
-background-image:  linear-gradient(135deg, #3922a5 25%, transparent 25%), linear-gradient(225deg, #3922a5 25%, transparent 25%), linear-gradient(45deg, #3922a5 25%, transparent 25%), linear-gradient(315deg, #3922a5 25%, #000000 25%);
-background-position:  40px 0, 40px 0, 0 0, 0 0;
-background-size: 80px 80px;
-background-repeat: repeat;
+    font-family: 'Roboto', sans-serif;
+	background-image: url("https://raw.githubusercontent.com/LMSDJ/lmsdj.github.io/master/gifLossy.gif");
+	/* background-image: url("https://raw.githubusercontent.com/LMSDJ/lmsdj.github.io/master/gifLossy.gif");  */
+	background-position: center;
+
+	background-size: cover;
+	position: relative;
+	
+	
 }
 
 
