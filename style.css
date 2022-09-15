@@ -9,18 +9,6 @@ html, body { min-height: 100%; }
 font-family: 'PROMETHEUS';
 }
 }
-body{
-    font-family: 'Roboto', sans-serif;
-	/* background-image: url("https://raw.githubusercontent.com/LMSDJ/lmsdj.github.io/master/gifLossy.gif");  */
-	background-position: center;
-
-	background-size: cover;
-	position: relative;
-	
-	
-}
-
-
 h1 {
   background-color: black;
   color: white;
