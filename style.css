@@ -13,8 +13,9 @@ font-family: 'PROMETHEUS';
 
 body{
     font-family: 'Roboto', sans-serif;
-	background-image: url("https://raw.githubusercontent.com/LMSDJ/lmsdj.github.io/master/gifLossy.gif");
-	/* background-image: url("https://raw.githubusercontent.com/LMSDJ/lmsdj.github.io/master/gifLossy.gif");  */
+	<video autoplay loop muted playsinline>
+  <source src="vid.mp4" type="video/mp4">
+</video>
 	background-position: center;
 
 	background-size: cover;
