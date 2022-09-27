@@ -1,113 +1,260 @@
-/* global */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-body{
-    background-image: url("https://raw.githubusercontent.com/LMSDJ/lmsdj.github.io/master/gifLossy.gif");
-	background-position: center;
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue",  Arial, sans-serif;
+  margin: auto;
+}
 
-	background-size: cover;
-	position: relative;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 165px 0 124px;
+  width: 100%;
+  margin: auto;
+}
+
+.bg-image {
+  position: absolute;
+  bottom: -88%;
+}
+
+
+body {
+    background: -moz-linear-gradient(45deg, #02e1ba 0%, #26c9f2 29%, #d911f2 66%, #ffa079 100%);
+    background: -webkit-linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
+    background: linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+	min-height: calc(100vh - 2rem);
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: space-evenly;
+	overflow: hidden;
+	position: relative; 
+}
+
+body::before, 
+body::after {
+	content: "";
+	width: 70vmax;
+	height: 70vmax;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.07);
+	left: -20vmin;
+	top: -20vmin;
+	animation: morph 15s linear infinite alternate, spin 20s linear infinite;
+	z-index: 1;
+	will-change: border-radius, transform;
+	transform-origin: 30% 30%;
+	pointer-events: none; 
+}
 	
-	
+body::after {
+    width: 70vmin;
+    height: 70vmin;
+    left: auto;
+    right: -10vmin;
+    top: auto;
+    bottom: 0;
+    animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse;
+    transform-origin: 10% 10%; 
 }
 
-
-h1 {
-  background-color: black;
-  color: white;
-  
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
 }
 
-.grid-2{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-	
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
 }
 
-
-h2,.white{
-    color: #fff;
-	
+@keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
 }
 
-a{
-    color: #FFFFFF;
-    text-decoration: none;
-
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%; }
+  100% {
+    border-radius: 40% 60%; } 
 }
 
-/* section 1 */
-.section-1{
-    padding-top: 25vh;
-    padding-left: 20vw;
-    text-align: center;
-	
+@keyframes spin {
+  to {
+    transform: rotate(1turn); 
+  } 
+}
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{opacity:0.29;}
+	.st3{fill:#FFFFFF;}
+	.st4{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+	.st5{clip-path:url(#SVGID_4_);}
+	.st6{clip-path:url(#SVGID_6_);}
+	.st7{clip-path:url(#SVGID_8_);}
+	.st8{clip-path:url(#SVGID_10_);}
+	.st9{fill:none;}
+	.st10{clip-path:url(#SVGID_12_);}
+	.st11{opacity:0.7;}
+	.st12{clip-path:url(#SVGID_14_);}
+	.st13{opacity:0.2;}
+	.st14{clip-path:url(#SVGID_16_);}
+	.st15{opacity:0.3;fill:#FFFFFF;enable-background:new    ;}
+
+
+
+
+.header h3 {
+  text-align: center;
+  color: #FFC745;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+  line-height: 36px;
 }
 
-.section-1 p{
-    font-size: 1.1rem;
-    padding-bottom: 10px;
-    margin:0;
-	color: #FFFFFF;
-	
+.header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  font-style: normal;
 }
 
-.section-1 h2{
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-	color: #FFFFFF;
-	font-weight: bold
-	
+.header > h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
 }
 
-.section-1 a{
-    font-size: 1.5rem;
-    padding: 10px;
-	color: #FFFFFF;
-}
-/* section 2 */
-.section-2{
-    padding-top: 20vh;
-    width: 70%;
-}
-
-.section-2 h2{
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-	color: #FFFFFF;
+.header > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  flex-grow: 0;
+  margin: 16px 0px;
 }
 
-.section-2 p{
-    font-size: 1.1rem;
-    padding-bottom: 10px;
-    margin:0;
-	color: #FFFFFF
+.fab {
+  display: flex;
+  flex-direction: row;
 }
 
-.section-1 a:hover{
-    color: #fff;
-    cursor: pointer;
-    transition: 0.3s;
+.fab > a {
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 0px 8px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
 }
 
-.white:hover{
-    position: relative;
-    padding-left: 10px;
+.logo {
+  margin-top: 75px;
 }
 
-/* media queres */
-@media(max-width:780px){
-    .grid-2{
-        grid-template-columns: 1fr;
+.logo > img {
+  width: 160px;
+  height: 64px;
+}
+
+.learn-more > a > button {
+  background: #f6821f;
+  border-radius: 4px;
+  border: none;
+  width: 180px;
+  margin-top: 78px;
+  height: 55px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  background: rgba(246, 130, 31, 1);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        background-size: contain;
+        background-position-y: center;
     }
-    .section-1{
-        padding:0;
-        padding-top: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+
+.container{
+    background-size: contain;
+    background-position-y: center;
     }
-    .section-2{
-        padding: 0;
-        padding-left: 1.5rem;
-        padding-top: 2rem;
-    }
-	
-	
+  pre {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    width: 100%;
+  }
+
+  body {
+    width: 100vw;
+  }
+
+  .header img {
+    margin-left: 0;
+  }
+
+  .installation-steps {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  ol {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
 }
